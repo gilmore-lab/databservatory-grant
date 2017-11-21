@@ -35,6 +35,8 @@ Use cases
     -   Raw files -&gt; machine applied codes -&gt; human analysts
     -   Raw files -&gt; human analysts -&gt; human applied codes -&gt; machine learning models
 -   Visualize time series from PLAY project
+-   Store videos on Databrary/Databservatory, link with annotations provided by MTurk workers.
+-   Web-based video annotation (lower temporal/spatial resolution than Datavyu)
 
 Projects to benchmark against or integrate with
 -----------------------------------------------
@@ -48,7 +50,9 @@ Others to talk with
 -------------------
 
 -   [Kristin Branson](https://www.janelia.org/people/kristin-branson), head of [Branson Lab](https://www.janelia.org/lab/branson-lab) at Janelia Farm.
-    -   Sample papers: (add from PaperPile)
+    -   Sample papers
+        -   Egnor, S. E. R., & Branson, K. (2016). Computational analysis of behavior. *Annual Review of Neuroscience*, 39, 217–236. Retrieved from <http://dx.doi.org/10.1146/annurev-neuro-070815-013845>
+        -   Kabra, M., Robie, A. A., Rivera-Alba, M., Branson, S., & Branson, K. (2013). JAABA: interactive machine learning for automatic annotation of animal behavior. *Nature Methods*, *10*(1), 64–67. Retrieved from <http://dx.doi.org/10.1038/nmeth.2281>
 -   Dima Amso
 -   Chen Yu
 -   Gedeon Deak
