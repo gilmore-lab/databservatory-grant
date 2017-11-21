@@ -1,7 +1,7 @@
 Planning
 ================
 Rick O. Gilmore
-11/20/2017
+2017-11-21 14:20:01
 
 Background
 ----------
@@ -26,7 +26,9 @@ Related NIH or NSF grants
 Use cases
 ---------
 
--   Platform for analyzing LENA recordings (Elika Bergelson from HomeBank)
+-   Platform for analyzing LENA recordings (Elika Bergelson from HomeBank) or CHAT format transcripts from PLAY videos
+    -   Talk with Mike about integration with [`childes-db`](http://childes-db.stanford.edu/index.html)?
+    -   Is *this* the chance to mirror the TalkBank/CHILDES videos on Databrary?
 -   Video analysis of looking direction
     -   Integration with [Kim Scott's](http://www.mit.edu/~kimscott/index.html) platform [LookIt](https://lookit.mit.edu/).
     -   [Notes](https://docs.google.com/document/d/1Qkndhz6BPAcuKlL5RgmdaIvBvNzyG8oWWvSTMptku9w/edit) from a discussion with Databrary staff on 2017-10-26.
@@ -35,8 +37,22 @@ Use cases
     -   Raw files -&gt; machine applied codes -&gt; human analysts
     -   Raw files -&gt; human analysts -&gt; human applied codes -&gt; machine learning models
 -   Visualize time series from PLAY project
+    -   Tags become search terms/search indices for Databrary
 -   Store videos on Databrary/Databservatory, link with annotations provided by MTurk workers.
 -   Web-based video annotation (lower temporal/spatial resolution than Datavyu)
+-   Research questions
+    -   Can (Datavyu) tagged video segments be used to train a ML model. What would the target "behavior" be?
+-   Develop or adapt existing video annotation standard
+    -   `<date_timestamp_hhmmss.nnn>, <duration_ms>, <bounding_region_pix>, <code_type>, <code>`
+    -   e.g, 20171121\_140425.033, .033, \[0,0,640,480\], face\_detected, TRUE
+    -   Does Yarkoni's `pliers` propose format for annotation?
+
+Commercial providers in the image/video annotation space
+--------------------------------------------------------
+
+-   [Playment](https://playment.io/), per [this](https://venturebeat.com/2017/11/21/playment-raises-1-6-million-to-improve-ai-training-through-crowdsourced-data-tagging/) story.
+-   [CrowdFlower](https://www.crowdflower.com/), per [this](https://venturebeat.com/2017/07/19/crowdflower-expands-to-help-companies-implement-machine-learning/) story.
+-   [Mighty AI](https://mty.ai/), per [this](https://venturebeat.com/2017/01/10/spare5-rebrands-as-mighty-ai-and-lands-14-million-from-intel-gv-accenture-others/) story.
 
 Projects to benchmark against or integrate with
 -----------------------------------------------
@@ -45,6 +61,7 @@ Projects to benchmark against or integrate with
 -   [WordBank](http://wordbank.stanford.edu)
 -   [OpenNeuro](http://openneuro.org)
 -   [Neurosynth](http://neurosynth.org)
+-   [Brain Imaging Data Structure (BIDS)](http://bids.neuroimaging.io/) as a possible "standard" data package for studies
 
 Others to talk with
 -------------------
@@ -52,10 +69,12 @@ Others to talk with
 -   [Kristin Branson](https://www.janelia.org/people/kristin-branson), head of [Branson Lab](https://www.janelia.org/lab/branson-lab) at Janelia Farm.
     -   Sample papers
         -   Egnor, S. E. R., & Branson, K. (2016). Computational analysis of behavior. *Annual Review of Neuroscience*, 39, 217–236. Retrieved from <http://dx.doi.org/10.1146/annurev-neuro-070815-013845>
-        -   Kabra, M., Robie, A. A., Rivera-Alba, M., Branson, S., & Branson, K. (2013). JAABA: interactive machine learning for automatic annotation of animal behavior. *Nature Methods*, *10*(1), 64–67. Retrieved from <http://dx.doi.org/10.1038/nmeth.2281>
+        -   Kabra, M., Robie, A. A., Rivera-Alba, M., Branson, S., & Branson, K. (2013). JAABA: Interactive machine learning for automatic annotation of animal behavior. *Nature Methods*, *10*(1), 64–67. Retrieved from <http://dx.doi.org/10.1038/nmeth.2281>
 -   Dima Amso
 -   Chen Yu
 -   Gedeon Deak
 -   Greg Farber, NIMH
     -   Rick emailed 2017-11-20.
 -   Deb Roy
+-   Chris Gorgolewski or Russ Poldrack from [OpenNeuro](http://openneuro.org)
+    -   Similarities between OpenNeuro's cloud analysis platform and what we want to build; possible synergies
